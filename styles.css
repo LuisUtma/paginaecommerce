@@ -31,6 +31,10 @@ button {
     bottom: 15px;
 }
 
+.foto  { float: left; width: 200px; margin: 15px 40px; }
+p  { font-size: 1.2em; color: teal; font-family: fantasy ; text-align: justify;
+    text-indent: 3em; margin:20px 40px; }
+
 .button-checkout:hover {
     background-color: #008CBA; /* Blue */
     color: white;

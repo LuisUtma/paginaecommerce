@@ -6,7 +6,9 @@ include "Conexion.php";
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="styleshee">
     <link rel="stylesheet" href="styles.css" />
-    
+   
+</head>
+
 <body>
         <div class="page-nav">
             <h1>Mi tienda</h1>
@@ -20,10 +22,10 @@ include "Conexion.php";
             $result=mysqli_query($conn,$sql);
             while($mostrar=mysqli_fetch_array($result)){
             ?>
-            <div class="product-container">
+            <div  class="product-container">
                 <h3><?php echo $mostrar['nombre'] ?></h3>
-                <img src="<?php echo $mostrar['portada'] ?>"/>
-                        <h1><?php echo $mostrar['reseña'] ?></h1>  
+                <img class="foto" src="<?php echo $mostrar['portada'] ?>"/>
+                        <p></p><h1 aling="left"><?php echo $mostrar['reseña'] ?></h1>  </p>
                 <button class="button-add" >Agregar</button>                  
                     
                 </div>
